@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Đặt màu nền cho bảng */
+body {
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Đặt chiều rộng tối đa và căn giữa bảng */
+.table {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Đổi màu nền và chữ cho tiêu đề bảng */
+.table thead th {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+}
+
+/* Căn giữa và tạo khoảng cách cho các ô trong bảng */
+.table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Đổi màu khi di chuột qua các hàng */
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Tạo khoảng cách giữa các ô của bảng */
+.table-bordered {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* Tạo hiệu ứng khi di chuột qua các tiêu đề cột */
+.table thead th:hover {
+    background-color: #218838;
+    transition: background-color 0.3s;
+}
+
+/* Thêm hiệu ứng khi di chuột qua các hàng */
+.table tbody tr {
+    transition: background-color 0.3s;
+}
+
+
+/* Tạo khoảng cách giữa các phần tử của bảng */
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+/* Tăng cường độ hiển thị khi bảng được chọn */
+.table:focus-within {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
